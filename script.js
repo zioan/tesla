@@ -37,6 +37,9 @@ energyBtn.addEventListener("click", energy);
 rayBtn.addEventListener("click", ray);
 endBtn.addEventListener("click", endOfStory);
 
+// Animation
+const tl = new TimelineMax();
+
 // Content area functions
 function showContent() {
   content.classList.remove("hide");

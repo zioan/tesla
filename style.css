@@ -6,7 +6,6 @@
 
 body {
   height: 100vh;
-  min-width: 1366px;
   position: relative;
   background: rgb(14, 14, 14);
   margin: auto;
@@ -16,11 +15,12 @@ body {
 }
 
 .main {
+  min-width: 1366px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 4fr;
+
   padding: 50px 30px;
-  width: 1366px;
   height: 768px;
   background: url(./img/background.jpg) center center no-repeat;
 }
@@ -89,4 +89,23 @@ button {
   font-size: 2rem;
   text-decoration: underline;
   margin-bottom: 2rem;
+}
+
+.responsive {
+  display: none;
+}
+
+@media only screen and (max-width: 1365px) {
+  .main {
+    display: none;
+  }
+  .responsive {
+    margin: auto;
+    max-width: 450px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 2rem;
+  }
 }
